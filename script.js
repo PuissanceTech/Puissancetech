@@ -1,7 +1,3 @@
-/* ============================================
-   PUISSANCE TECH — Script
-   ============================================ */
-
 (() => {
   'use strict';
 
@@ -32,7 +28,7 @@
     mobileMenu.setAttribute('aria-hidden', String(!isOpen));
   });
 
-  // Fermer le menu mobile en cliquant sur un lien
+  // Fermer le menu mobile
   mobileMenu.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       burger.classList.remove('active');
@@ -170,7 +166,7 @@
     }
   });
 
-  /* ----- Lien fluide pour les ancres ----- */
+  /* ----- Lien pour les ancres ----- */
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
